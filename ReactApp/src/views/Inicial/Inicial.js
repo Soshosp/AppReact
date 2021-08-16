@@ -22,13 +22,6 @@ function Inicial({ navigation }) {
         >
           <Text style={estiloInicial.botaoTexto}>Sobre</Text>
         </TouchableOpacity>
-
-        <TouchableOpacity
-          style={estiloInicial.botaoContainer}
-          onPress={abrirItem}
-        >
-          <Text style={estiloInicial.botaoTexto}>Item</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );

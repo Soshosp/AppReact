@@ -2,7 +2,7 @@ import React from "react";
 import estiloRotasStack from "./estiloRotasStack";
 import { createStackNavigator } from "@react-navigation/stack";
 import Inicial from "../../views/Inicial/Inicial";
-import Colecao from "../../views/Colecao/Colecao";
+import Sobre from "../../views/Colecao/Colecao";
 import Item from "../../views/Item/Item";
 
 const Stack = createStackNavigator();
@@ -20,10 +20,10 @@ const RotasPrincipalStack = () => {
         }}
       />
       <Stack.Screen
-        name="Colecao"
-        component={Colecao}
+        name="Sobre"
+        component={Sobre}
         options={{
-          cardStyle: estiloRotasStack.screenColecao,
+          cardStyle: estiloRotasStack.screenSobre,
           headerStyle: { backgroundColor: "#14417b" },
           headerTintColor: "#FFFFFF",
         }}
