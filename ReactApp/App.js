@@ -1,27 +1,15 @@
-import React, {Component} from 'react';
-import { SafeAreaView, StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
-import BoasVindas from './components/BoasVindas';
+import "react-native-gesture-handler";
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import "react-native-gesture-handler";
+import RotasLoginStack from "./src/components/rotasStack/RotasLoginStack";
+import { NavigationContainer } from "@react-navigation/native";
 
-export default class App extends Component {
-  render(){
-    return(
-      <View style={styles.container}>
-        <BoasVindas caixadetexto="S.O.S HOSP"/>
-        <BoasVindas caixadetexto="Sobre Nós"/>
-        <BoasVindas caixadetexto="O App tem como iniciativa facilitar em sua procura por um hospital, proporcionando ao paciente informações que o levam a concluir qual será o hospital com um atendimento mais rápido, para que o mesmo não passe muito tempo em filas ou tenha o constrangimento de não ser atendido."/>
-      </View>
-    );
-  }
+export default function App() {
+  return (
+    <NavigationContainer>
+      <StatusBar barStyle="light-content" backgroundColor="#081a31" />
+      <RotasLoginStack />
+    </NavigationContainer>
+  );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#ededed"
-  },
-  segundo: {
-
-  }
-});
