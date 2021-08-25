@@ -1,1 +1,1 @@
-# AppReact
+# Protótipo de app que faz ligação com o nosso site SosHosp que tem o foco em ajudar o paciente encontrar um hospital que possua uma ocupação menor no momento da consulta.
